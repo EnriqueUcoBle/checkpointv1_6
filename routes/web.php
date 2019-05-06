@@ -12,7 +12,10 @@
 */
 
 Route::get('/login', function () {
-    return view('sesion_up');
+    return view('acceder');
+});
+Route::get('/registro', function () {
+    return view('registrar');
 });
 Route::get('/', function () {
     return view('welcome');

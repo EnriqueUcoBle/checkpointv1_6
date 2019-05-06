@@ -1,0 +1,10 @@
+.contenedor_contenido{
+    display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:center;
+   
+}
+.contenido{
+    width: 700px;
+}

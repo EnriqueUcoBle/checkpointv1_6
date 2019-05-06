@@ -5,7 +5,7 @@
 </head>
 <body>
 @include("layauts.inicio.navbar")
-@include("layauts.inicio.content")
+@include("layauts.inicio.content_login")
 @include("layauts.inicio.footer")
 @include("layauts.inicio.js")
 
