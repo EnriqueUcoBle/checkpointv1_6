@@ -23,6 +23,10 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+Route::get('/operador/dashboard', function () {
+    return view('dashboard');
+});
+
 
 Route::get('/panel', 'PricipalController@index');
 Route::get('/inicio/{id}', 'LoginLogout@Index');
