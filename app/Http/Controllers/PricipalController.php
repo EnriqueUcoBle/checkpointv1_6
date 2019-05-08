@@ -14,7 +14,21 @@ class PricipalController extends Controller
     public function index()
     {
         //
-         return view("index");
+         return view("dashboard");
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function mostrar()
+    {
+        //
+          $Resultados=Docente::all();
+        foreach ($Resultados as $docente){
+        echo $Resultados->nombre;
+    }
     }
 
     /**

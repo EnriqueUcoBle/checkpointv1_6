@@ -26,10 +26,18 @@ Route::get('/dashboard', function () {
 Route::get('/operador/dashboard', function () {
     return view('dashboard');
 });
-
-
+Route::get('/leer',function(){
+    $users =User::all();
+    foreach ($users as $articulo) {
+        # code...
+        echo $users->name;
+    }
+});
+    
 Route::get('/panel', 'PricipalController@index');
-Route::get('/inicio/{id}', 'LoginLogout@Index');
+Route::get('/inicio/{id}', 'PricipalController@index');
 //Route::resource("pagina","PricipalController");
+
+
 
 

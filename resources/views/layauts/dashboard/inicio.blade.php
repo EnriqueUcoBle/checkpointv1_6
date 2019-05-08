@@ -12,7 +12,7 @@
     <div class="page-content">
     	<div class="row">
 		  @include("layauts.dashboard.parts.menu_admin")
-			@include("layauts.dashboard.parts.content")
+			
 		</div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>
