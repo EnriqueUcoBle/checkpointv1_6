@@ -28,7 +28,7 @@ Route::get('/operador/dashboard', function () {
 });
 Route::get('/leer',function(){
     $users =User::all();
-    foreach ($users as $articulo) {
+    foreach ($users as $user) {
         # code...
         echo $users->name;
     }
