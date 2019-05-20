@@ -20,8 +20,17 @@ Route::get('/registro', function () {
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/admin', function () {
+    return view('users.admin.inicio_admin');
+});
+Route::get('/secretario', function () {
+    return view('users.secretario.inicio_secretario');
+});
+Route::get('/tutor', function () {
+    return view('users.tutor.inicio_tutor');
+});
+Route::get('/docente', function () {
+    return view('users.docente.inicio_docente');
 });
 Route::get('/operador/dashboard', function () {
     return view('dashboard');
