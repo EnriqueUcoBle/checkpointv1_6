@@ -18,7 +18,7 @@
 					            <div class="panel-title">Catalogo de Alumnos</div>
 					          
 					            <div class="panel-options">
-					              <a href="alta_docente" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              <a href="catalogo_alumno" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
 					            </div>
 					        </div>
 			  				<div class="panel-body">

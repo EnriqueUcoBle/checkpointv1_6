@@ -17,7 +17,7 @@
 			  				<div class="panel-heading">
 					            <div class="panel-title">Alta de grupos:</div>
 					            <div class="panel-options">
-					              <a href="alta_docente" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              <a href="alta_grupo" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
 					            </div>
 					        </div>
 			  				<div class="panel-body">

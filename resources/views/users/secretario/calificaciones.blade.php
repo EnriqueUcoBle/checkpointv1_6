@@ -19,7 +19,7 @@
 					            <div class="panel-title">Calificaciones por grupo:</div>
 					          
 					            <div class="panel-options">
-					              <a href="alta_docente" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              <a href="calificaciones" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
 					            </div>
 					        </div>
 			  				<div class="panel-body">
