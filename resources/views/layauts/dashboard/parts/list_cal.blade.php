@@ -2,7 +2,7 @@
 	  				<div class="col-md-9">
 						<div class="content-box-large">
 			  				<div class="panel-heading">
-                       <div class="panel-title">Eliga su grupo para pasar asistencia:</div>
+                       <div class="panel-title">Eligra el grupo para asignar calificaiones:</div>
 					       
 					<div class="panel-options">
 					             
@@ -29,7 +29,7 @@
 										</div>
                                         <div class="btn btn-primary">
 											<i class="fas fa-list-alt"></i>
-											  Ver Lista de asistencia
+											  Ver Lista de Calificaciones
 										</div>
 								</form>
 									

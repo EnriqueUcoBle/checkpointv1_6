@@ -106,7 +106,6 @@ Route::get('/asistencias', function () {
 Route::get('/update_info_tutor', function () {
     return view('users.tutor.update_info');
 });
-///////////////////////////////////// URL PARA TUTORES////////////////////////////////////////////////
 
 ///////////////////////////////////// AQUI TERMIAN LAS URLS DE TUTOR////////////////////////////////////////////////
 
@@ -129,10 +128,13 @@ Route::get('/asistencia_grupal', function () {
     return view('users.docente.asistencias');
 });
 Route::get('/reportar', function () {
-    return view('users.docente.reporte');
+    return view('users.docente.reportar');
 });
 Route::get('/list_asist', function () {
     return view('users.docente.asistencia');
+});
+Route::get('/list_cal', function () {
+    return view('users.docente.calificaciones');
 });
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE DOCENTES////////////////////////////////////////////////
 
