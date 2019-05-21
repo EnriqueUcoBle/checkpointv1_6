@@ -3,11 +3,22 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="index.blade.php"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-                    <li><a href="calendar.blade.php"><i class="glyphicon glyphicon-calendar"></i> Kardex</a></li>
-                    <li><a href="editors.blade.php"><i class="glyphicon glyphicon-pencil"></i> Historial de Reportes</a></li>
-                    <li><a href="stats.blade.php"><i class="glyphicon glyphicon-stats"></i> Calificaciones del Semestre</a></li>
-                  
+                    
+                    <li class="current"><a href="profile_tutor"><i class="fas fa-user"></i>  Perfil</a></li>
+                    <li><a href="resumen"><i class="fas fa-chalkboard-teacher"></i>  Resumen General</a></li>
+                    <li><a href="kardex"><i class="fas fa-graduation-cap"></i>  Kardex</a></li>
+                    <li><a href="reportes"><i class="fas fa-stream"></i>  Reportes</a></li>
+                    <li><a href="asistencias"><i class="fas fa-clipboard-list"></i>  Asistencias</a></li>
+                    <li class="submenu">
+                         <a href="#">
+                            <i class="fas fa-user-circle"></i>  Mi Cuenta:
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <ul>
+                            <li><a href="update_info"><i class="fas fa-database"></i>  Actulizar Datos</a></li>
+                            <li><a href="logout"><i class="fas fa-door-open"></i>  Salir</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 </div>

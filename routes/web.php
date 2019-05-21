@@ -12,18 +12,19 @@
 */
 
 //////////////////////////////////URLS GENERALES////////////////////////////////////////////////////////////////
-Route::get('/login', function () {
-    return view('acceder');
-});
 Route::get('/registro', function () {
     return view('registrar');
 });
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/inicio', function () {
+    return view('login');
 });
 Route::get('/logout', function () {
     return view('logout');
 });
+Route::get('/validar_regristro', function () {
+    //return view('');
+});
+
 
 
 ///////////////////////////////////// TERMINAN LAS URL GENERALES////////////////////////////////////////////////
@@ -50,9 +51,20 @@ Route::get('/admin', function () {
 
 
 ///////////////////////////////////// URL PARA TUTORES////////////////////////////////////////////////
-Route::get('/tutor', function () {
+Route::get('/profile_tutor', function () {
     return view('users.tutor.inicio_tutor');
 });
+Route::get('/resumen', function () {
+    return view('users.tutor.resumen');
+});
+Route::get('/kardex', function () {
+    return view('users.tutor.kardex');
+});
+Route::get('/reportes', function () {
+    return view('users.tutor.reportes');
+});
+///////////////////////////////////// URL PARA TUTORES////////////////////////////////////////////////
+
 ///////////////////////////////////// AQUI TERMIAN LAS URLS DE TUTOR////////////////////////////////////////////////
 
 
@@ -79,7 +91,7 @@ Route::get('/docente', function () {
 
 
 ///////////////////////////////////// URL PARA USUARIO SECRETARIO////////////////////////////////////////////////
-Route::get('/secretario', function () {
+Route::get('/profile_cap', function () {
     return view('users.secretario.inicio_secretario');
 });
 Route::get('/alta_alumno', function () {

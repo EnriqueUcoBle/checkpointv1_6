@@ -5,8 +5,9 @@
  
 </head>
 <body>
+@include('layauts.dashboard.parts.header')   
 @include("layauts.inicio.content_registro")
-@include("layauts.inicio.js")
+
 
 </body>
 </html>

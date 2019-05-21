@@ -3,7 +3,8 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="secretario"><i class="glyphicon glyphicon-home"></i>  Informacion General</a></li>
+                    
+                    <li class="current"><a href="profile_cap"><i class="fas fa-user"></i>  Perfil</a></li>
                     <li><a href="alta_alumno"><i class="fas fa-user-graduate"></i>  Alta alumno</a></li>
                     <li><a href="alta_docente"><i class="fas fa-chalkboard-teacher"></i>  Alta de Docentes</a></li>
                     <li><a href="alta_docente"><i class="fas fa-tasks"></i>  Alta de Materias</a></li>
@@ -17,7 +18,6 @@
                             <span class="caret pull-right"></span>
                          </a>
                          <ul>
-                            <li><a href="perfil"><i class="fas fa-user"></i>  Perfil</a></li>
                             <li><a href="update_info"><i class="fas fa-database"></i>  Actulizar Datos</a></li>
                             <li><a href="logout"><i class="fas fa-door-open"></i>  Salir</a></li>
                         </ul>

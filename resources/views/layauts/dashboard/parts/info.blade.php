@@ -5,7 +5,7 @@
 					            <div class="panel-title">Info Usuario</div>
 					          
 					            <div class="panel-options">
-					              <a href="secretario" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              <a href="profile_cap" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
 					            </div>
 					        </div>
 			  				<div class="panel-body">

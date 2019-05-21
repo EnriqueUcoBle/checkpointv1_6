@@ -37,6 +37,14 @@
 											<label>Fecha naciemiento</label>
 											<input class="form-control" placeholder="fecha de nacimiento" type="date">
 										</div>
+										 <div class="form-group">
+											<label>Telefono </label>
+											<input class="form-control" placeholder="ingrese su nuevo numero" type="text" name="telefono">
+										</div>
+										 <div class="form-group">
+											<label>Correo </label>
+											<input class="form-control" placeholder="ingrese su nuevo correo" type="email" name="correo">
+										</div>
                     <div class="form-group">
 											<label>Nueva Contraseña </label>
 											<input class="form-control" placeholder="ingrese su nueva contraseña" type="text" name="password1">

@@ -10,7 +10,7 @@
     <div class="page-content">
     	<div class="row">
 		  @include("layauts.dashboard.parts.menu_tutor")
-			@include("layauts.dashboard.parts.info")
+			@include("layauts.dashboard.parts.kardex")
 		</div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>

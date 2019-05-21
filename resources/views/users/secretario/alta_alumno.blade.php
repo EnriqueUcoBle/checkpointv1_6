@@ -28,38 +28,38 @@
 								  <div class="form-group">
 								    <label   class="col-sm-2 control-label">Nombre del alumno:</label>
 								    <div class="col-sm-10">
-								      <input type="text" name="nombre_alumno" class="form-control"  placeholder="ingrese el nombre">
+								      <input type="text" name="nombre_alumno" class="form-control"  placeholder="ingrese el nombre del alumno">
 								    </div>
 								  </div>
 								  <div class="form-group">
 								    <label  class="col-sm-2 control-label">Apellidos del alumno:</label>
 								    <div class="col-sm-10">
-								      <input type="text" name="apellido_alumno" class="form-control"  placeholder="ingrese los apellidos">
+								      <input type="text" name="apellido_alumno" class="form-control"  placeholder="ingrese los apellidos del alumno">
 								    </div>
 								  </div>
                   <div class="form-group">
 								    <label  class="col-sm-2 control-label">Numero de control:</label>
 								    <div class="col-sm-10">
-								      <input type="text" class="form-control" name="numero_alumno" placeholder="ingrese el numero de control">
+								      <input type="text" class="form-control" name="numero_alumno" placeholder="ingresa la matricula del alumno">
 								    </div>
 								  </div>
 									
 								  <div class="form-group">
 								    <label   class="col-sm-2 control-label">Nombre del tutor:</label>
 								    <div class="col-sm-10">
-								      <input type="text" name="nombre_tutor" class="form-control"  placeholder="ingrese el nombre">
+								      <input type="text" name="nombre_tutor" class="form-control"  placeholder="ingrese el nombre del tutor">
 								    </div>
 								  </div>
 								  <div class="form-group">
 								    <label  class="col-sm-2 control-label">Apellidos del tutor:</label>
 								    <div class="col-sm-10">
-								      <input type="text" name="apellido_tutor" class="form-control"  placeholder="ingrese los apellidos">
+								      <input type="text" name="apellido_tutor" class="form-control"  placeholder="ingrese los apellidos del tutor">
 								    </div>
 								  </div>
                   <div class="form-group">
 								    <label  class="col-sm-2 control-label">Numero de Whatsapp:</label>
 								    <div class="col-sm-10">
-								      <input type="text" class="form-control" name="whatsapp" placeholder="ingrese el numero de control">
+								      <input type="text" class="form-control" name="whatsapp" placeholder="Whatsapp o numero de celular">
 								    </div>
 								  </div>
 								

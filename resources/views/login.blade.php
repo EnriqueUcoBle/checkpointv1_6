@@ -4,8 +4,7 @@
 @include("layauts.inicio.head")
 </head>
 <body>
-@include("layauts.inicio.content_login")
-@include("layauts.inicio.js")
-
+ @include('layauts.dashboard.parts.header')   
+@include('layauts.inicio.content_login')
 </body>
 </html>
