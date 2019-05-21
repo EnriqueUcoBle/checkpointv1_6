@@ -100,5 +100,8 @@ Route::get('/catalogo_docente', function () {
 Route::get('/calificaciones', function () {
     return view('users.secretario.calificaciones');
 });
+Route::get('/update_info', function () {
+    return view('users.secretario.update_info');
+});
 ////////////////////////////////////TERMINAN LAS URL DE SECRETARIO//////////////////////////////////////////////////////
 

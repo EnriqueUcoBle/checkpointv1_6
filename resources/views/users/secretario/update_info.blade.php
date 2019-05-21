@@ -11,7 +11,7 @@
     <div class="page-content">
     	<div class="row">
 		  @include("layauts.dashboard.parts.menu_secretario")
-			@include("layauts.dashboard.parts.info")
+			@include("layauts.dashboard.parts.update_info")
 		</div>
     </div>
     @include("layauts.dashboard.parts.js")
