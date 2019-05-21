@@ -26,6 +26,12 @@ Route::get('/admin', function () {
 Route::get('/secretario', function () {
     return view('users.secretario.inicio_secretario');
 });
+Route::get('/alta_alumno', function () {
+    return view('users.secretario.alta_alumno');
+});
+Route::get('/alta_docente', function () {
+    return view('users.secretario.alta_docente');
+});
 Route::get('/tutor', function () {
     return view('users.tutor.inicio_tutor');
 });
