@@ -5,7 +5,7 @@
 					            <div class="panel-title">Info Usuario</div>
 					          
 					            <div class="panel-options">
-					              <a href="update_info" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              <a href="" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
 					            </div>
 					        </div>
 			  				<div class="panel-body">

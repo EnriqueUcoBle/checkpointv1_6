@@ -63,6 +63,15 @@ Route::get('/kardex', function () {
 Route::get('/reportes', function () {
     return view('users.tutor.reportes');
 });
+Route::get('/individual', function () {
+    return view('users.tutor.calificaciones');
+});
+Route::get('/asistencias', function () {
+    return view('users.tutor.asistencias');
+});
+Route::get('/update_info_tutor', function () {
+    return view('users.tutor.update_info');
+});
 ///////////////////////////////////// URL PARA TUTORES////////////////////////////////////////////////
 
 ///////////////////////////////////// AQUI TERMIAN LAS URLS DE TUTOR////////////////////////////////////////////////
