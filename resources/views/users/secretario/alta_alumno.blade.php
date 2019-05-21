@@ -21,14 +21,14 @@
     	<div class="row">
 		  @include("layauts.dashboard.parts.menu_secretario")
 				<div class="row">
-	  				<div class="col-md-6">
+	  				<div class="col-md-9">
 						<div class="content-box-large">
 			  				<div class="panel-heading">
 					            <div class="panel-title">Alta de Alumno & Padre de Familia</div>
 					          
 					            <div class="panel-options">
-					              <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
-					              <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+					              <a href="alta_alumno" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					              
 					            </div>
 					        </div>
 			  				<div class="panel-body">

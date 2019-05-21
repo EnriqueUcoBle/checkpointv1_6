@@ -20,7 +20,26 @@
     <div class="page-content">
     	<div class="row">
 		  @include("layauts.dashboard.parts.menu_secretario")
-			@include("layauts.dashboard.parts.info")
+				<div class="row">
+	  				<div class="col-md-9">
+						<div class="content-box-large">
+			  				<div class="panel-heading">
+					            <div class="panel-title">Calificaciones por grupo:</div>
+					          
+					            <div class="panel-options">
+					              <a href="alta_docente" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+					            </div>
+					        </div>
+			  				<div class="panel-body">
+			  					<form class="form-horizontal" role="form">
+								  
+								</form>
+			  				</div>
+			  			</div>
+	  				</div>
+			</div>
+    	</div>
+		
 		</div>
     </div>
     <script src="https://code.jquery.com/jquery.js"></script>

@@ -11,6 +11,7 @@
 |
 */
 
+//////////////////////////////////URLS GENERALES////////////////////////////////////////////////////////////////
 Route::get('/login', function () {
     return view('acceder');
 });
@@ -20,9 +21,64 @@ Route::get('/registro', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/logout', function () {
+    return view('logout');
+});
+
+
+///////////////////////////////////// TERMINAN LAS URL GENERALES////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+///////////////////////////////////// URL USUARIO ADMIN////////////////////////////////////////////////
 Route::get('/admin', function () {
     return view('users.admin.inicio_admin');
 });
+///////////////////////////////////// AQUI TERMINAN LAS URLS DE ADMIN////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+///////////////////////////////////// URL PARA TUTORES////////////////////////////////////////////////
+Route::get('/tutor', function () {
+    return view('users.tutor.inicio_tutor');
+});
+///////////////////////////////////// AQUI TERMIAN LAS URLS DE TUTOR////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+///////////////////////////////////// URL PARA DOCENTES////////////////////////////////////////////////
+Route::get('/docente', function () {
+    return view('users.docente.inicio_docente');
+});
+///////////////////////////////////// AQUI TERMINAN LAS URLS DE DOCENTES////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////// URL PARA USUARIO SECRETARIO////////////////////////////////////////////////
 Route::get('/secretario', function () {
     return view('users.secretario.inicio_secretario');
 });
@@ -32,27 +88,17 @@ Route::get('/alta_alumno', function () {
 Route::get('/alta_docente', function () {
     return view('users.secretario.alta_docente');
 });
-Route::get('/tutor', function () {
-    return view('users.tutor.inicio_tutor');
+Route::get('/alta_grupo', function () {
+    return view('users.secretario.alta_grupo');
 });
-Route::get('/docente', function () {
-    return view('users.docente.inicio_docente');
+Route::get('/catalogo_alumno', function () {
+    return view('users.secretario.catalogo_alumnos');
 });
-Route::get('/operador/dashboard', function () {
-    return view('dashboard');
+Route::get('/catalogo_docente', function () {
+    return view('users.secretario.catalogo_docente');
 });
-Route::get('/leer',function(){
-    $users =User::all();
-    foreach ($users as $user) {
-        # code...
-        echo $users->name;
-    }
+Route::get('/calificaciones', function () {
+    return view('users.secretario.calificaciones');
 });
-    
-Route::get('/panel', 'PricipalController@index');
-Route::get('/inicio/{id}', 'PricipalController@index');
-//Route::resource("pagina","PricipalController");
-
-
-
+////////////////////////////////////TERMINAN LAS URL DE SECRETARIO//////////////////////////////////////////////////////
 
