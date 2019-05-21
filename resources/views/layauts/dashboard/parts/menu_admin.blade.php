@@ -4,7 +4,7 @@
                 <ul class="nav">
                     <!-- Main menu -->
                     <li class="current"><a href="index.blade.php"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
-                    <li><a href="calendar.blade.php"><i class="glyphicon glyphicon-cog"></i>  Administrar Usuarios</a></li>
+                    <li><a href="admin_user"><i class="glyphicon glyphicon-cog"></i>  Administrar Usuarios</a></li>
                     <li class="submenu">
                          <a href="#">
                             <i class="glyphicon glyphicon-signal"></i> Estadisticas por:

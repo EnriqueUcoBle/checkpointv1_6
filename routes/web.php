@@ -41,6 +41,9 @@ Route::get('/validar_regristro', function () {
 Route::get('/admin', function () {
     return view('users.admin.inicio_admin');
 });
+Route::get('/admin_user', function () {
+    return view('users.admin.administrar_user');
+});
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE ADMIN////////////////////////////////////////////////
 
 
@@ -87,6 +90,15 @@ Route::get('/update_info_tutor', function () {
 ///////////////////////////////////// URL PARA DOCENTES////////////////////////////////////////////////
 Route::get('/docente', function () {
     return view('users.docente.inicio_docente');
+});
+Route::get('/califcaciones_grupal', function () {
+    return view('users.docente.calificaciones');
+});
+Route::get('/asistencia_grupal', function () {
+    return view('users.docente.asistencias');
+});
+Route::get('/reportar', function () {
+    return view('users.docente.reporte');
 });
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE DOCENTES////////////////////////////////////////////////
 
