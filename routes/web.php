@@ -44,6 +44,37 @@ Route::get('/admin', function () {
 Route::get('/admin_user', function () {
     return view('users.admin.administrar_user');
 });
+Route::get('/edit_user', function () {
+    return view('users.admin.edit_user');
+});
+Route::get('/estadisticas_plantel', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/estadisticas_semestre', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/estadisticas_turno', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/estadisticas_grupo', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/estadisticas_alumno', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/generated_total', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/generated_kardex', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/generated_reportes', function () {
+    return view('users.admin.no_disponible');
+});
+Route::get('/generated_asistencia', function () {
+    return view('users.admin.no_disponible');
+});
+
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE ADMIN////////////////////////////////////////////////
 
 
@@ -99,6 +130,9 @@ Route::get('/asistencia_grupal', function () {
 });
 Route::get('/reportar', function () {
     return view('users.docente.reporte');
+});
+Route::get('/list_asist', function () {
+    return view('users.docente.asistencia');
 });
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE DOCENTES////////////////////////////////////////////////
 

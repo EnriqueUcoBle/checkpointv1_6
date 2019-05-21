@@ -3,15 +3,14 @@
   <head>
     <title>@yield('titulo','CheckPointV3')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @include("layauts.dashboard.parts.head")
-
+   @include("layauts.dashboard.parts.head")
   </head>
   <body>
 			@include("layauts.dashboard.parts.header")
     <div class="page-content">
     	<div class="row">
 		  @include("layauts.dashboard.parts.menu_docente")
-      @include("layauts.dashboard.parts.info")
+      @include("layauts.dashboard.parts.lista_asist")
 			
 		</div>
     </div>

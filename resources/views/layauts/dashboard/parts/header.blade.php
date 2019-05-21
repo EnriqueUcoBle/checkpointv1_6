@@ -5,7 +5,8 @@
 	           <div class="col-md-5">
 	              <!-- Logo -->
 	              <div class="logo">
-	                 <h1><a href="">CheckPoint 1.12</a></h1>
+						  
+	                 <a href=""><img src="images/check.png" alt="" width="auto" height="40px" style="float:left"></a>
 	              </div>
 	           </div>
 	           <div class="col-md-5">

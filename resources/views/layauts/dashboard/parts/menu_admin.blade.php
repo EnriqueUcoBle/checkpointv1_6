@@ -3,7 +3,7 @@
 		  	<div class="sidebar content-box" style="display: block;">
                 <ul class="nav">
                     <!-- Main menu -->
-                    <li class="current"><a href="index.blade.php"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
+                    <li class="current"><a href="admin"><i class="glyphicon glyphicon-home"></i> Inicio</a></li>
                     <li><a href="admin_user"><i class="glyphicon glyphicon-cog"></i>  Administrar Usuarios</a></li>
                     <li class="submenu">
                          <a href="#">

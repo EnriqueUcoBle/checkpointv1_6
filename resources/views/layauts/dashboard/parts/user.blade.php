@@ -28,7 +28,7 @@
 												<td>$Data_Request Not Aviable</td>
 												<td>$Data_Request Not Aviable</td>
 												<td>$Data_Request Not Aviable</td>
-												<td><button type="button" class="btn btn-warning"><i class="fas fa-user-edit"></i></button></td>
+												<td><a href="edit_user"><button type="button" class="btn btn-warning"><i class="fas fa-user-edit"></i></button></a> </td>
 												<td><button type="button" class="btn btn-danger"><i class="fas fa-user-minus"></i></button></td>
 																						
 											</tr>

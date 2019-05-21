@@ -10,11 +10,13 @@
 			@include("layauts.dashboard.parts.header")
     <div class="page-content">
     	<div class="row">
-		  @include("layauts.dashboard.parts.menu_docente")
-      @include("layauts.dashboard.parts.info")
+		  @include("layauts.dashboard.parts.menu_admin")
+      @include("layauts.dashboard.parts.no_disponible")
 			
 		</div>
     </div>
-     @include("layauts.dashboard.parts.js")
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>
