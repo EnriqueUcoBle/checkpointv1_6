@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class migration extends Model
+class Materia extends Model
 {
-    //
+    protected $tabla = 'materias';
 }

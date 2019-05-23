@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Grupo extends Model
 {
-  protected $tabla = 'usuarios';
+    protected $tabla = 'grupos';
 }

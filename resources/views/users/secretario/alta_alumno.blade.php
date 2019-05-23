@@ -24,7 +24,7 @@
 					            </div>
 					        </div>
 			  				<div class="panel-body">
-			  					<form class="form-horizontal" role="form">
+			  					<form class="form-horizontal" role="form" action="" method="POST">
 								  <div class="form-group">
 								    <label   class="col-sm-2 control-label">Nombre del alumno:</label>
 								    <div class="col-sm-10">
@@ -37,13 +37,34 @@
 								      <input type="text" name="apellido_alumno" class="form-control"  placeholder="ingrese los apellidos del alumno">
 								    </div>
 								  </div>
+									 <div class="form-group">
+											<label class="control-label col-md-2">Sexo:</label>
+											<div class="col-md-4">
+												<select class="form-control input-sm" name="sexo_alumno">
+													<option>masculino</option>
+													<option>femenino</option>
+																					
+												</select>
+											</div>
+										</div>
                   <div class="form-group">
 								    <label  class="col-sm-2 control-label">Numero de control:</label>
 								    <div class="col-sm-10">
-								      <input type="text" class="form-control" name="numero_alumno" placeholder="ingresa la matricula del alumno">
+								      <input type="text" class="form-control" name="matricula" placeholder="ingresa la matricula del alumno">
 								    </div>
 								  </div>
-									
+									<div class="form-group">
+								    <label  class="col-sm-2 control-label">Fecha de nacimiento:</label>
+								    <div class="col-sm-10">
+								      <input type="date" class="form-control" name="fecha_alumno" >
+								    </div>
+								  </div>
+									<div class="form-group">
+								    <label   class="col-sm-2 control-label">Semestre actual:</label>
+								    <div class="col-sm-10">
+								      <input type="text" name="num_semestre_alumno" class="form-control"  placeholder="numero de semestre">
+								    </div>
+								  </div>
 								  <div class="form-group">
 								    <label   class="col-sm-2 control-label">Nombre del tutor:</label>
 								    <div class="col-sm-10">
@@ -56,13 +77,41 @@
 								      <input type="text" name="apellido_tutor" class="form-control"  placeholder="ingrese los apellidos del tutor">
 								    </div>
 								  </div>
+									 
+									<div class="form-group">
+											<label class="control-label col-md-2">Sexo:</label>
+											<div class="col-md-4">
+												<select class="form-control input-sm" name="sexo_tutor">
+													<option>masculino</option>
+													<option>femenino</option>
+																					
+												</select>
+											</div>
+										</div>
+										<div class="form-group">
+								    <label  class="col-sm-2 control-label">Fecha de nacimiento:</label>
+								    <div class="col-sm-10">
+								      <input type="date" class="form-control" name="fecha_tutor" >
+								    </div>
+								  </div>
                   <div class="form-group">
 								    <label  class="col-sm-2 control-label">Numero de Whatsapp:</label>
 								    <div class="col-sm-10">
 								      <input type="text" class="form-control" name="whatsapp" placeholder="Whatsapp o numero de celular">
 								    </div>
 								  </div>
-								
+								<div class="form-group">
+								    <label  class="col-sm-2 control-label">Email:</label>
+								    <div class="col-sm-10">
+								      <input type="email" name="correo" class="form-control"  placeholder="ingrese el correo del tutor">
+								    </div>
+								  </div>
+										<div class="form-group">
+								    <label  class="col-sm-2 control-label">Direccion:</label>
+								    <div class="col-sm-10">
+								      <input type="email" name="direccion" class="form-control"  placeholder="ingrese la direccion del tutor">
+								    </div>
+								  </div>
 								  <div class="form-group">
 								    <div class="col-sm-offset-2 col-sm-10">
 								      <button type="submit" class="btn btn-primary">Registar</button>

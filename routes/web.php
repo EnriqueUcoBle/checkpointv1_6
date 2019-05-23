@@ -15,7 +15,7 @@
 Route::get('/registro', function () {
     return view('registrar');
 });
-Route::get('/inicio', function () {
+Route::get('/', function () {
     return view('login');
 });
 Route::get('/logout', function () {
@@ -29,7 +29,12 @@ Route::get('/validar_regristro', function () {
 
 ///////////////////////////////////// TERMINAN LAS URL GENERALES////////////////////////////////////////////////
 
-
+Route::get('/ver', function () {
+        $usuarios =App\User::first();
+        echo "nombre :". $usuarios->usuario;
+        echo "<br>";
+        echo "tipo de usuario :".$usuarios->tipo;
+});
 
 
 
@@ -174,3 +179,6 @@ Route::get('/update_info', function () {
 });
 ////////////////////////////////////TERMINAN LAS URL DE SECRETARIO//////////////////////////////////////////////////////
 
+Route::get('/update_info', function () {
+    return view('users.secretario.update_info');
+});

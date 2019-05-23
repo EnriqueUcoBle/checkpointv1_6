@@ -12,7 +12,7 @@
 			                <input class="form-control" type="text" placeholder="E-mail address">
 			                <input class="form-control" type="password" placeholder="Password">
 			                <div class="action">
-			                    <a class="btn btn-primary signup" href="index.html">Iniciar Sesion</a>
+			                    <a class="btn btn-primary signup" href="login">Iniciar Sesion</a>
 			                </div>                
 			            </div>
 			        </div>
