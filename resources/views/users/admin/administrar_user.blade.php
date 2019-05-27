@@ -1,4 +1,8 @@
-<!DOCTYPE html>
+
+<?php 
+include "../resources/views/users/admin/validar_user.php";
+try{
+?><!DOCTYPE html>
 <html>
   <head>
     <title>@yield('titulo','CheckPointV3')</title>
@@ -20,3 +24,7 @@
     <script src="js/custom.js"></script>
   </body>
 </html>
+<?php } catch (Exception $e) {
+            return view('login');
+            
+        } ?>

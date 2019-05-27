@@ -49,33 +49,15 @@ Route::get('/edit_user', function () {
 });
 Route::get('/edit_user/{id}','UserController@update');
 Route::get('/edit/{id}','UserController@actualizar');
-Route::get('/estadisticas_plantel', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/estadisticas_semestre', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/estadisticas_turno', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/estadisticas_grupo', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/estadisticas_alumno', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/generated_total', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/generated_kardex', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/generated_reportes', function () {
-    return view('users.admin.no_disponible');
-});
-Route::get('/generated_asistencia', function () {
-    return view('users.admin.no_disponible');
-});
+Route::get('/estadisticas_plantel','UserController@nodisponible' );
+Route::get('/estadisticas_semestre', 'UserController@nodisponible');
+Route::get('/estadisticas_turno','UserController@nodisponible');
+Route::get('/estadisticas_grupo','UserController@nodisponible');
+Route::get('/estadisticas_alumno','UserController@nodisponible');
+Route::get('/generated_total','UserController@nodisponible');
+Route::get('/generated_kardex','UserController@nodisponible' );
+Route::get('/generated_reportes','UserController@nodisponible' );
+Route::get('/generated_asistencia','UserController@nodisponible' );
 
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE ADMIN////////////////////////////////////////////////
 Route::post('/profile','UserController@validar' );

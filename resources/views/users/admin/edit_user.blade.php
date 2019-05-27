@@ -1,3 +1,8 @@
+<?php 
+include "../resources/views/include/session.php";
+$userSession= new userSession();
+try{
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -19,4 +24,7 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
   </body>
-</html>
+</html><?php } catch (Exception $e) {
+            return view('login');
+            
+        } ?>

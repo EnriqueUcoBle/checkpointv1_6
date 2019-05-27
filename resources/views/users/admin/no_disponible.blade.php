@@ -1,3 +1,7 @@
+<?php 
+include "../resources/views/users/admin/validar_user.php";
+try{
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,3 +24,7 @@
     <script src="js/custom.js"></script>
   </body>
 </html>
+<?php } catch (Exception $e) {
+            return view('login');
+            
+        } ?>

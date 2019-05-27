@@ -1,5 +1,5 @@
 <?php 
-include "../resources/views/users/admin/validar_user.php";
+include "../resources/views/include/session.php";
 try{
 ?>
 <!DOCTYPE html>

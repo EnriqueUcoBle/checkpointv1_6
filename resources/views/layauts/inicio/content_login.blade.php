@@ -10,8 +10,8 @@
 			            <div class="content-wrap">
 			                <h6>Bienvenido a CheckPoint</h6>
 			               @csrf
-			                <input class="form-control" name="usuario" type="text" placeholder="correo">
-			                <input class="form-control" name="pass"  type="password" placeholder="contraseña">
+			                <input class="form-control" name="usuario" type="text"  required placeholder="correo">
+			                <input class="form-control" name="pass"  type="password"required  placeholder="contraseña">
 			                <div class="action">
 			                    
 								<button class="btn btn-primary signup" type="submit">Iniciar Sesion </button>
