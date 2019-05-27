@@ -32,6 +32,16 @@
                             <li><a href="generated_asistencia"><i class="glyphicon glyphicon-stats"></i> Asistencia</a></li>
                         </ul>
                     </li>
+                     <li class="submenu">
+                         <a href="#">
+                            <i class="fas fa-user-circle"></i>  Mi Cuenta:
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <ul>
+                            <li><a href="update_info_tutor"><i class="fas fa-database"></i>  Actulizar Datos</a></li>
+                            <li><a href="logout"><i class="fas fa-door-open"></i>  Salir</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
 </div>

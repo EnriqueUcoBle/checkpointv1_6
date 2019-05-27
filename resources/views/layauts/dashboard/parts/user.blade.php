@@ -13,9 +13,9 @@
 									<table class="table table-hover">
 									<thead>
 										<tr>
-											<th scope="col">Nombre Usuario</th>
+											<th scope="col">ID</th>
 											<th scope="col">Tipo</th>
-											<th scope="col">Correo</th>
+											<th scope="col">Usuario</th>
 											<th scope="col">Password</th>
 												<th scope="col">Editar</th>
 													<th scope="col">Eliminar</th>
@@ -23,15 +23,19 @@
 										</tr>
 									</thead>
 									<tbody>
+										@foreach ( $usuarios as $usuario )
+												
+									
 											<tr>
-												<th scope="row">$Data_Request Not Aviable</th>
-												<td>$Data_Request Not Aviable</td>
-												<td>$Data_Request Not Aviable</td>
-												<td>$Data_Request Not Aviable</td>
-												<td><a href="edit_user"><button type="button" class="btn btn-warning"><i class="fas fa-user-edit"></i></button></a> </td>
-												<td><button type="button" class="btn btn-danger"><i class="fas fa-user-minus"></i></button></td>
+												<th scope="row"><?php echo $usuario->id; ?></th>
+												<td><?php echo $usuario->tipo; ?></td>
+												<td><?php echo $usuario->usuario; ?></td>
+												<td><?php echo $usuario->pass; ?></td>
+												<td><a href="edit_user/<?php echo  $usuario->id; ?>"><button type="button"  class="btn btn-warning"><i class="fas fa-user-edit"></i></button></a> </td>
+												<td><a href="edit_user/<?php echo  $usuario->id; ?>"><button type="button" class="btn btn-danger"><i class="fas fa-user-minus"></i></button></a></td>
 																						
-											</tr>
+												</tr>
+												@endforeach
 									</tbody>
 									</table>
 									

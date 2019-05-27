@@ -24,7 +24,7 @@ class AlumnosController extends Controller
      */
     public function create()
     {
-        $table->
+    
     }
 
     /**

@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Administrador;
 use Illuminate\Http\Request;
 
-class AdministradorController extends Controller
+class AdminController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -46,7 +46,7 @@ class AdministradorController extends Controller
      */
     public function show(Administrador $administrador)
     {
-        //
+        return Admin::get();
     }
 
     /**

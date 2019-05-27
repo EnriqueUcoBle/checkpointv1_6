@@ -1,4 +1,6 @@
 	<div class="row">
+		<form action="edit_user/<?php echo $user->id; ?>" method="post">
+		@csrf
 	  				<div class="col-md-9">
 						<div class="content-box-large">
 			  				<div class="panel-heading">
@@ -13,35 +15,25 @@
 								  <fieldset>						
 										<div class="form-group">
 											<label>Nombre</label>
-											<input class="form-control"  readonly="readonly" placeholder="nombre del usuario" type="text">
+											<input class="form-control"  readonly="readonly" placeholder="<?php echo $user->usuario; ?>" type="text">
 										</div>
                     <div class="form-group">
 											<label>Apelllidos</label>
 										<input class="form-control" readonly="readonly" placeholder="apellidos del usuario" type="text">
 										</div>
-                    <div class="form-group">
-											<label>Direccion</label>
-											<input class="form-control"  readonly="readonly" placeholder="direccion" type="text">
-										</div>
 										 <div class="form-group">
-											<label>Telefono </label>
-											<input class="form-control" placeholder="ingrese su nuevo numero" type="text" name="telefono">
-										</div>
-										 <div class="form-group">
-											<label>Correo </label>
-											<input class="form-control" placeholder="ingrese su nuevo correo" type="email" name="correo">
+											<label>Usuario</label>
+										<input class="form-control" name="usuario" placeholder="<?php echo $user->usuario; ?>" type="text">
 										</div>
                     <div class="form-group">
 											<label>Nueva Contraseña </label>
-											<input class="form-control" placeholder="ingrese su nueva contraseña" type="text" name="password1">
+											<input class="form-control" name="pass" placeholder="<?php echo $user->pass; ?>" type="text">
 										</div>
 								
 									</fieldset>
 									<div>
-										<div class="btn btn-primary">
-											<i class="fa fa-save"></i>
-											  Actualizar Datos  
-										</div>
+										
+										<button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> Actualizar Datos</button>
 											<div class="btn btn-danger">
 											<i class="fas fa-window-close"></i>
 											  Cancelar   
@@ -53,4 +45,5 @@
 			  				</div>
 			  			</div>
 	  				</div>
+						</form>
 			</div>

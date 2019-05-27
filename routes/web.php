@@ -18,9 +18,8 @@ Route::get('/registro', function () {
 Route::get('/', function () {
     return view('login');
 });
-Route::get('/logout', function () {
-    return view('logout');
-});
+Route::get('/logout', 'UserController@logout');
+
 Route::get('/validar_regristro', function () {
     //return view('');
 });
@@ -43,15 +42,13 @@ Route::get('/ver', function () {
 
 
 ///////////////////////////////////// URL USUARIO ADMIN////////////////////////////////////////////////
-Route::get('/admin', function () {
-    return view('users.admin.inicio_admin');
-});
-Route::get('/admin_user', function () {
-    return view('users.admin.administrar_user');
-});
+Route::get('/admin', 'UserController@' );
+Route::get('/admin_user','UserController@showonly');
 Route::get('/edit_user', function () {
     return view('users.admin.edit_user');
 });
+Route::get('/edit_user/{id}','UserController@update');
+Route::get('/edit/{id}','UserController@actualizar');
 Route::get('/estadisticas_plantel', function () {
     return view('users.admin.no_disponible');
 });
@@ -81,6 +78,8 @@ Route::get('/generated_asistencia', function () {
 });
 
 ///////////////////////////////////// AQUI TERMINAN LAS URLS DE ADMIN////////////////////////////////////////////////
+Route::post('/profile','UserController@validar' );
+Route::get('/profile','UserController@valida' );
 
 
 
@@ -179,6 +178,4 @@ Route::get('/update_info', function () {
 });
 ////////////////////////////////////TERMINAN LAS URL DE SECRETARIO//////////////////////////////////////////////////////
 
-Route::get('/update_info', function () {
-    return view('users.secretario.update_info');
-});
+Route::post('/validar_usuario', 'UserController@post');
