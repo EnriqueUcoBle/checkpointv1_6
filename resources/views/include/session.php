@@ -12,6 +12,10 @@ class UserSession{
      public function getCurrentUser(){
       return  $_SESSION;
     }
+    public function closeSession(){
+        session_unset();
+        session_destroy();
+    }
 
 }
 ?>

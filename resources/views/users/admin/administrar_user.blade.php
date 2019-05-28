@@ -1,6 +1,7 @@
 
 <?php 
-include "../resources/views/users/admin/validar_user.php";
+include "../resources/views/include/session.php";
+$u
 try{
 ?><!DOCTYPE html>
 <html>

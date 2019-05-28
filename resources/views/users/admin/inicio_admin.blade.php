@@ -1,5 +1,9 @@
 <?php 
 include "../resources/views/include/session.php";
+
+if(isset($_SESSION['id'])){
+  echo "session existente....";
+}
 try{
 ?>
 <!DOCTYPE html>
@@ -23,7 +27,4 @@ try{
     <script src="js/custom.js"></script>
   </body>
 </html>
-<?php } catch (Exception $e) {
-            return view('login');
-            
-        } ?>
+<?php } catch (Exception $e) { return view('login');} ?>

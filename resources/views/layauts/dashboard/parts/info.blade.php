@@ -52,7 +52,7 @@
 									<div class="form-group">
 										<label class="col-sm-2 control-label">Tipo de usuario</label>
 										<div class="col-sm-10">
-											<p class="form-control-static"><?php echo $_SESSION['tipo']; ?></p>
+											<p class="form-control-static"><?php  ?></p>
 										</div>
 									</div>
 									<div class="form-group">

@@ -1,6 +1,6 @@
 <?php 
 include "../resources/views/include/session.php";
-$userSession= new userSession();
+
 try{
 ?>
 <!DOCTYPE html>
