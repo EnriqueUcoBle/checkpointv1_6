@@ -43,11 +43,11 @@ Route::get('/ver', function () {
 
 ///////////////////////////////////// URL USUARIO ADMIN////////////////////////////////////////////////
 Route::get('/admin', 'UserController@' );
+Route::get('/delete', 'UserController@delete' );
 Route::get('/admin_user','UserController@showonly');
-Route::get('/edit_user', function () {
-    return view('users.admin.edit_user');
-});
-Route::get('/edit_user/{id}','UserController@update');
+Route::get('/edit_user','UserController@showonly');
+Route::post('/edit_user','UserController@edit');
+Route::post('/update_password','UserController@update');
 Route::get('/edit/{id}','UserController@actualizar');
 Route::get('/estadisticas_plantel','UserController@nodisponible' );
 Route::get('/estadisticas_semestre', 'UserController@nodisponible');

@@ -1,7 +1,6 @@
 
 <?php 
 include "../resources/views/include/session.php";
-$u
 try{
 ?><!DOCTYPE html>
 <html>

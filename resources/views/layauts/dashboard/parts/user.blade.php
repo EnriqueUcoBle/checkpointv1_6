@@ -17,24 +17,26 @@
 											<th scope="col">Tipo</th>
 											<th scope="col">Usuario</th>
 											<th scope="col">Password</th>
-												<th scope="col">Editar</th>
-													<th scope="col">Eliminar</th>
+											<th scope="col">Editar</th>
+											
 											
 										</tr>
 									</thead>
 									<tbody>
 										@foreach ( $usuarios as $usuario )
 												
-									
+									<form action="edit_user" method="post">
+										@csrf
 											<tr>
-												<th scope="row"><?php echo $usuario->id; ?></th>
-												<td><?php echo $usuario->tipo; ?></td>
+												<input type="text" name="id" hidden value="<?php echo $usuario->id; ?>"><th scope="row"><?php echo $usuario->id; ?></th>
+												<input type="text" name="tipo" hidden value="<?php echo $usuario->tipo; ?>"><td><?php echo $usuario->tipo; ?></td>
 												<td><?php echo $usuario->usuario; ?></td>
 												<td><?php echo $usuario->pass; ?></td>
-												<td><a href="edit_user/<?php echo  $usuario->id; ?>"><button type="button"  class="btn btn-warning"><i class="fas fa-user-edit"></i></button></a> </td>
-												<td><a href="edit_user/<?php echo  $usuario->id; ?>"><button type="button" class="btn btn-danger"><i class="fas fa-user-minus"></i></button></a></td>
+												<td><button type="submit"  class="btn btn-warning"><i class="fas fa-user-edit"></i></button></td>
+												
 																						
 												</tr>
+									</form>			
 												@endforeach
 									</tbody>
 									</table>

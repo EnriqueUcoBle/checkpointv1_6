@@ -183,8 +183,33 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit($id, Request $request)
+    public function edit( Request $request)
     {
+        $tipo=$request->input('tipo');
+        
+        if (isset($tipo)){
+             if ($tipo=="admin"){
+                    
+                    $results = Admin::where('usuario_id' ,$request->input('id'))->first();
+                   
+                }
+                if ($tipo=="secretario"){
+                    $results = Secretario::where('usuario_id' ,$request->input('id'))->first();
+                     
+                }
+                if ($tipo=="tutor"){
+                    $results = Tutor::where('usuario_id' ,$request->input('id'))->first();
+                }
+                if ($tipo=="docente"){
+                    $results = Docente::where('usuario_id' ,$request->input('id'))->first();
+                }
+                 $user = User::where('id' ,$request->input('id'))->first();
+                  return view('users.admin.edit_user',compact('results','user'));
+         }
+         else{
+          echo "no se encontro usuarios"     ;
+         }
+        
         
     }
 
@@ -195,10 +220,44 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update($id)
-    {
-        $user = User::find($id);
-        return view('users.admin.edit_user',compact('user'));
+    public function update(Request $request)
+    {   
+        
+            if($request->input('option')=='no'){
+                \DB::table('usuarios')
+                ->where('id', $request->input('id'))
+                ->update(['pass' =>  $request->input('pass')]);
+            $user = User::where('id' ,$request->input('id'))->first();
+            if($user->pass==$request->input('pass')){
+                $usuarios=User::all();
+                return view('users.admin.administrar_user',compact('usuarios'));
+            }else{
+                echo "no se cambio la contrase;a";
+            }
+        }else if($request->input('option')=="si"){
+            if($request->input('tipo')=="secretario"){
+                 \DB::table('capturista')->where('usuario_id', '=', $request->input('id'))->delete();
+            }
+             if($request->input('tipo')=="admin"){
+                 \DB::table('administradores')->where('usuario_id', '=', $request->input('id'))->delete();
+            }
+             if($request->input('tipo')=="tutor"){
+                 \DB::table('tutores')->where('usuario_id', '=', $request->input('id'))->delete();
+            }
+             if($request->input('tipo')=="docente"){
+                 \DB::table('docentes')->where('usuario_id', '=', $request->input('id'))->delete();
+            }
+           
+            \DB::table('usuarios')->where('id', '=', $request->input('id'))->delete();
+             $user = User::where('id' ,$request->input('id'))->first();
+             if(isset($user->usuario)){
+                 echo "no se pudo borrar el usuario";
+             }else{
+                 echo "el usuario se borro correctamente";
+             }
+
+        }
+       
       
     }
 
@@ -208,7 +267,7 @@ class UserController extends Controller
      * @param  \App\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function delete(Request $request)
     {
         //
     }
